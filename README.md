@@ -7,7 +7,6 @@ https://guyujiezi.com/cicada
 
 > 谷雨解字：「金印累累佩陆离，河梁更赋断肠诗。莫拥旌旗真个去。何处？玉堂元自要论思。且约风流三学士」XmnNk/1oWFIQ。
 
-谷雨解字：「金印累累佩陆离，河梁更赋断肠诗。莫拥旌旗真个去。何处？玉堂元自要论思。且约风流三学士」XmnNk/1oWFIQ。
 安装「寒蝉」后，渲染的效果变成了：
 ![渲染效果](https://guyujiezi.com/static/cicada-rendering.png)
 

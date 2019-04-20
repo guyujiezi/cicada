@@ -5,13 +5,20 @@ https://guyujiezi.com/cicada
 ## 什么是「寒蝉」？
 「寒蝉」是一款Chrome浏览器扩展程序。安装该浏览器插件后，可以将网页中的特殊文本用科学字体来渲染。比如网页中有如下文字：
 
-> 「金印累累佩陆离，河梁更赋断肠诗。莫拥旌旗真个去。何处？玉堂元自要论思。且约风流三学士」XmnNk/1oWFIQ。
+> 
 
 安装「寒蝉」后，渲染的效果变成了：
 ![渲染效果](https://guyujiezi.com/static/cicada-rendering.png)
 
 
 ## 如何安装？
+
+### Chrome 网上应用商店
+
+https://chrome.google.com/webstore/detail/%E5%AF%92%E8%9D%89/ncfcbhgflkfhjblompalonnngcehfogo
+
+### 离线安装
+
 1. 前往 https://github.com/guyujiezi/cicada/releases 下载「寒蝉」最新版的压缩包；<br>
    ![步骤1](https://guyujiezi.com/static/cicada-install-step-1.png)
 2. 找一个文件目录，将刚才下载的压缩包在此解压；

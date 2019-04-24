@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>设置</title>
+    <link rel="shortcut icon" href="assets/icon-32x32.png" type="image/png">
+    <link type="text/css" rel="stylesheet" href="vendor/bulma.min.css">
+    <link type="text/css" rel="stylesheet" href="vendor/font-awesome.min.css">
+    <script src="vendor/zepto.min.js"></script>
+    <script src="vendor/zepto.fx.js"></script>
+    <script src="vendor/zepto.fx_methods.js"></script>
+    <style>
+        fieldset {
+            border: 1px solid #e1e4e8;
+            padding: 2rem;
+            border-radius: 0.5rem;
+        }
+
+        legend {
+            padding: 0 0.5rem;
+        }
+
+        .input.is-fullwidthless {
+            max-width: 30rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://guyujiezi.com/" target="_blank">
+                    <img src="assets/logo.png" height="32" alt="寒蝉" title="访问「谷雨解字」">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="tabs is-centered is-boxed">
+                <ul>
+                    <li class="is-active"><a class="page-tab-link" data-target="general" href="#general">常规</a></li>
+                    <li><a class="page-tab-link" data-target="advance" href="#advance">高级</a></li>
+                    <li><a class="page-tab-link" data-target="help" href="#help">帮助</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container page-tab-content" id="general">
+            <div class="content">
+                <p>例外列表中的网站将不会被「寒蝉」处理。</p>
+            </div>
+    
+            <nav class="panel" id="exception-list">
+                <p class="panel-heading">例外网站</p>
+                <div class="panel-block">
+                    <div class="field has-addons" style="width: 100%">
+                        <p class="control is-expanded">
+                            <input class="input" id="exception-domain" type="text" placeholder="www.example.com">
+                        </p>
+                        <p class="control">
+                            <a class="button" id="exception-append">添加</a>
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container page-tab-content is-hidden" id="advance">
+            <fieldset>
+                <legend class="is-size-4">应用密钥</legend>
+    
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">公钥</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-fullwidthless" type="text" placeholder="请输入公钥串" id="public-key">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">密钥</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-fullwidthless" type="password" placeholder="请输入密钥串" id="secret-key">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="field is-horizontal">
+                    <div class="field-label"></div>
+                    <div class="field-body">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a class="button is-info" id="app-key-save">保存</a>
+                            </p>
+                            <p class="control">
+                                <a class="button" id="app-key-reset">重置</a>
+                            </p>
+                            <p class="control">
+                                <a class="button is-text" target="_blank" href="https://guyujiezi.com/develop">查看我的应用密钥</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            <strong>如何得获取应用密钥？</strong>
+                            <p>前往「<a href="https://guyujiezi.com/" target="_blank">谷雨解字</a>」<a href="https://guyujiezi.com/signup" target="_blank">注册</a>账号，即可拥有和账号绑定应用密钥。登录网站后，前往「<a href="https://guyujiezi.com/develop" target="_blank">密钥管理</a>」查看你的应用密钥。</p>
+                        </li>
+                        <li>
+                            <strong>为什么要设置应用密钥？</strong>
+                            <p>使用应用密钥能提供更好的安全性和私密性，并可以在「<a href="https://guyujiezi.com/repository">我的字库</a>」中查看该账号过往创建的字体。</p>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+        </div>
+        <div class="container page-tab-content is-hidden" id="help">
+            <div class="content">
+                <h2 class="title is-size-5">联系方式</h2>
+                <ul>
+                    <li>发现错误？<a href="https://github.com/guyujiezi/guyujiezi.com/issues" target="_blank">发送错误报告</a></li>
+                    <li>电子邮件：<a href="mailto:cicada@guyujiezi.com">cicada@guyujiezi.com</a></li>
+                    <li>关注社交账号：
+                        <a href="https://twitter.com/guyujiezi" target="_blank">
+                            <span class="icon">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <h2 class="title is-size-5">支持</h2>
+                <p>Powered by <a href="https://guyujiezi.com/" target="_blank">谷雨解字</a></p>
+                <figure class="image">
+                    <a href="https://guyujiezi.com/" target="_blank" title="访问「谷雨解字」">
+                        <img src="https://guyujiezi.com/static/logo-1.png" style="max-width: 264px;" alt="谷雨解字">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <script src="assets/options.js"></script>
+</body>
+
+</html>

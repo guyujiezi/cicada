@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>寒蝉</title>
+    <link rel="stylesheet" href="vendor/bulma.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/switchery.min.css" />
+    <script src="vendor/zepto.min.js"></script>
+    <script src="vendor/switchery.min.js"></script>
+    <script src="vendor/clipboard.min.js"></script>
+</head>
+
+<body>
+    <nav class="level is-mobile" style="margin-bottom: 0.75rem;">
+        <div class="level-left">
+            <div class="level-item">
+                <a class="navbar-item" href="https://guyujiezi.com/" target="_blank">
+                    <img src="assets/logo.png" height="32" alt="寒蝉" title="寒蝉">
+                </a>
+                <div class="navbar-item">
+                    <input type="checkbox" class="is-switch" checked id="switch">
+                </div>
+            </div>
+        </div>
+        <div class="level-right">
+            <div class="level-item">
+                <a class="navbar-item" href="options.html" target="_blank">
+                    <span class="icon has-text-link">
+                        <i class="fa fa-cog"></i>
+                    </span>
+                    <span>选项</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="section" style="padding: 0 0.75rem 1rem 0.75rem;">
+        <div class="container" id="form">
+            <div class="field">
+                <div class="control">
+                    <textarea class="textarea" placeholder="输入原文" id="plaintext" maxlength="280"></textarea>
+                </div>
+            </div>
+            <div class="field is-hidden" id="field-shadowtext">
+                <div class="control">
+                    <textarea class="textarea" placeholder="输入阴书" id="shadowtext"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox" checked id="auto-generate">
+                        自动生成阴书
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <p class="control">
+                    <button class="button is-link is-small is-fullwidth" id="submit" disabled>提交</button>
+                </p>
+            </div>
+        </div>
+        <div class="container is-hidden" id="success">
+            <div class="field">
+                <div class="control">
+                    <textarea class="textarea" readonly id="result"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <p class="control">
+                    <button class="button is-link is-small is-fullwidth" id="copy" data-clipboard-target="#result">复制</button>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control">
+                    <button class="button is-light is-small is-fullwidth" id="back">返回继续</button>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="assets/popup.js"></script>
+</body>
+
+</html>

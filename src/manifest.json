@@ -1,0 +1,47 @@
+{
+    "name": "寒蝉",
+    "version": "1.0.1",
+    "description": "用科学字体渲染网页中的文字。",
+    "manifest_version": 2,
+    "icons": {
+        "16": "assets/icon-16x16.png",
+        "32": "assets/icon-32x32.png",
+        "48": "assets/icon-48x48.png",
+        "128": "assets/icon-128x128.png"
+    },
+    "browser_action": {
+        "default_icon":  {
+            "16": "assets/icon-19x19.png",
+            "32": "assets/icon-38x38.png"
+        },
+        "default_title": "寒蝉",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"],
+            "css": ["content-script.css"],
+            "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "scripts": [
+            "vendor/sha1.min.js",
+            "background.js"
+        ]
+    },
+    "web_accessible_resources": [
+        "plugin.js",
+        "vendor/mark.min.js"
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "homepage_url": "https://guyujiezi.com/",
+    "options_page": "options.html"
+}
